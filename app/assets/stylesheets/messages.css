@@ -56,17 +56,101 @@
 .main-header{
   height: 100px;
   padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
+.group-title{
+  color: #333;
+  font-size: 24px;
+  margin-top: 36px;
+}
+
+.header-button{
+  margin-top: 40px;
+}
+.header-button a{
+  color: darkred;
+  padding: 20px;
+  border: 1px solid darkred;
+  text-decoration: none;
+}
 
 .messages{
   padding: 46px 40px 0;
   height: calc(100vh - 190px);
   background-color: #fafafa;
+  overflow: scroll;
+}
+
+.message{
+  margin-top: 10px;
+}
+
+.top-message{
+  display: flex;
+}
+
+.message-user{
+  font-size: 16px;
+  color: #434a54;
+  margin-right: 10px;
+}
+
+.message-date{
+  color: #999;
+  font-size: 12px;
+}
+
+.down-message{
+  margin-top: 10px;
+}
+.message-text{
+  font-size: 14px;
+  color: #434a54;
+  margin-bottom: 40px;
 }
 
 .form{
   background-color: #dddddd;
   height: 90px;
   padding: 20px 40px;
+  display: flex;
+}
+
+.form-input{
+  background-color: white;
+  display: flex;
+  width: 100%;
+}
+
+.form-message {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.form-submit{
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
+  background-color: #38aef0;
+}
+
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }
